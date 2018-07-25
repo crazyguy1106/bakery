@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BeBakery</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+//<![CDATA[
+function initialize() {
+var latlng = new google.maps.LatLng(16.435509,  80.569138);
+var myOptions = {
+  zoom: 13,
+  center: latlng,
+  navigationControl: true,
+  mapTypeControl: true,
+  scaleControl: true,
+  streetViewControl: true,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+var contentString = '<h1>location of shinjuku school</h1>'+'<img src="banner2.gif">'+'<p>HI hello</p>';
+var infowindow = new google.maps.InfoWindow({
+  content: contentString
+});
+var marker = new google.maps.Marker({
+  position: latlng,
+  map: map,
+  title: "internetacademy"
+});
+google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map, marker);
+});
+}
+//]]>
+</script>
+</head>
+<body>
+<!-- header -->
+<header class="header">
+  <h1 class="logo"><img src="images/logo.png" alt="logo"></h1>
+  <div class="pushmenu">
+    <input class="menu-btn" type="checkbox" id="menu-btn">
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#promos">Promos</a></li>
+        <li><a href="#buy_now">Buy now</a></li>
+    </ul>
+  </div>
+  <nav class="nav">
+    <ul class="menulist">
+      <li class="menu-item"><a href="#">Home</a></li>
+      <li class="menu-item"><a href="#about">About</a></li>
+      <li class="menu-item"><a href="#products">Products</a></li>
+      <li class="menu-item"><a href="#gallery">Gallery</a></li>
+      <li class="menu-item"><a href="#promos">Promos</a></li>
+      <li class="menu-item"><a href="#">Buy now</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- main -->
+<main>
+  <div class="banner">
+    <img src="images/banner.jpg" alt="banner">
+  </div>
+  <!-- content1 -->
+  <section id="about" class="content1">
+    <h2 class="content_header1">Nullam wisis ultricies gravida</h2>
+    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptnim id est laborum.</p>
+    <p class="call">Call us +23344554766</p>
+    <button class="border_none button">
+      More about us
+    </button>
+  </section>
+  <!-- content2 -->
+  <div id="products" class="content2bg">
+    <section class="content2">
+      <h2 class="content_header2">Range of products</h2>
+      <ul class="rangelist">
+        <li class="items">
+          <figure class="images">
+            <img src="images/bread.png" alt="bread">
+          </figure>
+          <h3 class="h3">Bread</h3>
+          <p class="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </li>
+        <li class="items">
+          <figure class="images">
+            <img src="images/cake.png" alt="cake">
+          </figure>
+          <h3 class="h3">Cake</h3>
+          <p class="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </li>
+        <li class="items">
+          <figure class="images">
+            <img src="images/donut.png" alt="donut">
+          </figure>
+          <h3 class="h3">Donut</h3>
+          <p class="para3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </li>
+      </ul>
+      <figure class="cookie">
+        <img src="images/cookie.png" alt="cookies">
+      </figure>
+    </section>
+  </div>
+  <!-- content3 -->
+  <section id="gallery" class="content3">
+      <h2 class="content_header1">Quisue cursus comodo volupat</h2>
+      <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptnim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <ul class="products">
+        <li class="products_list">
+          <figure class="products">
+            <img src="images/image1.jpg" alt="image1">
+          </figure>
+        </li>
+        <li class="products_list">
+          <figure class="products">
+            <img src="images/image2.jpg" alt="image2">
+          </figure>
+        </li>
+        <li class="products_list">
+          <figure class="products">
+            <img src="images/image3.jpg" alt="image3">
+          </figure>
+        </li>
+        <li class="products_list">
+          <figure class="products">
+            <img src="images/image4.jpg" alt="image4">
+          </figure>
+        </li>
+      </ul>
+      <div class="content3_para">
+        <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+      <div class="text-right">
+        <button class="border_none button">
+          See whole gallery
+        </button>
+      </div>
+    </section>
+  <!-- content4 -->
+  <section id="promos" class="content4">
+    <h2 class="content_header1 caketittle">Weekly promotions</h2>
+    <ul class="cakeitem">
+      <li class="cakes">
+        <div class="caketittle">
+          <h3 class="h2">Chocolate Cake</h3>
+        </div>
+        <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <figure class="cakesimg">
+          <img src="images/cake1.png" alt="cake">
+        </figure>
+      </li>
+      <li class="cakes">
+        <div class="caketittle">
+          <h3 class="h2">Nut Cake</h3>
+        </div>
+        <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <figure class="cakesimg">
+          <img src="images/cake2.png" alt="cake">
+        </figure>
+      </li>
+    </ul>
+  </section>
+  <div class="map" onload="initialize()">
+  		<div id="map_canvas" style="width:50%; height:50%"></div>
+  </div>
+</main>
+<!-- footer -->
+<footer class="footer">
+  <a id="back2Top" title="Back to top" href="#" style="display: inline;">➤</a>
+  <small>&copy; Copyrights Reserved</small>
+</footer>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>
