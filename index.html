@@ -10,35 +10,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-//<![CDATA[
-function initialize() {
-var latlng = new google.maps.LatLng(16.435509,  80.569138);
-var myOptions = {
-  zoom: 13,
-  center: latlng,
-  navigationControl: true,
-  mapTypeControl: true,
-  scaleControl: true,
-  streetViewControl: true,
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-};
-var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
-var contentString = '<h1>location of shinjuku school</h1>'+'<img src="banner2.gif">'+'<p>HI hello</p>';
-var infowindow = new google.maps.InfoWindow({
-  content: contentString
-});
-var marker = new google.maps.Marker({
-  position: latlng,
-  map: map,
-  title: "internetacademy"
-});
-google.maps.event.addListener(marker, 'click', function() {
-  infowindow.open(map, marker);
-});
-}
-//]]>
-</script>
 </head>
 <body>
 <!-- header -->
