@@ -49,8 +49,8 @@ a img {
 }
 
 #back2Top:hover {
-  background-color: black;
-  color: #471e1e;
+  background-color: #965454;
+  color: white;
 }
 
 /* header */
@@ -187,7 +187,7 @@ a img {
 }
 
 .para3 {
-  font-size: 15px;
+  font-size: 18px;
   font-style:normal;
   font-family: georgia;
   color: #afa7a2;
