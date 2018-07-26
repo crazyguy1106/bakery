@@ -309,7 +309,7 @@ a img {
   }
 
   .button:hover {
-    background_color: #fff;
+    background-color: #fff;
     color: #bf4d4e;
     border: solid 1px #bf4d4e;
   }
@@ -438,6 +438,10 @@ a img {
 
   .menulist li:last-child a {
     color: #3a3333;
+  }
+  
+  .menulist li:last-child a:hover {
+    color: #fff;
   }
 
   /* content1 */
