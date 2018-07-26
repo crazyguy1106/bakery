@@ -2,6 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  outline: none;
 }
 
 section,article,aside,hgroup,header,footer,nav,figure {
@@ -87,7 +88,7 @@ a img {
   font-size: 36px;
   font-style: normal;
   line-height: 35px;
-  font-family: averia serif libre;
+  font-family: "averia serif libre";
   color: #372921;
   padding-left: 20px;
   padding-top: 30px;
@@ -154,7 +155,7 @@ a img {
   font-size: 36px;
   font-style: normal;
   line-height: 39px;
-  font-family: averia serif libre;
+  font-family: "averia serif libre";
   color: #ffffff;
   padding-left: 20px;
   padding-top: 30px;
@@ -227,7 +228,7 @@ a img {
 .h2 {
     font-size: 22px;
     font-style: normal;
-    font-family: averia serif libre;
+    font-family: "averia serif libre";
     color: #372921;
     padding: 20px;
     width: 75%;
@@ -302,8 +303,17 @@ a img {
     border-radius: 8px;
     font-size: 20px;
     font-family: georgia;
+    border: solid 1px #bf4d4e;
+    transition: all .5s ease;
+    cursor: pointer;
   }
 
+  .button:hover {
+    background_color: #fff;
+    color: #bf4d4e;
+    border: solid 1px #bf4d4e;
+  }
+  
   /* content2 */
   .content2 {
     background-repeat: no-repeat;
@@ -410,18 +420,23 @@ a img {
 
   .menu-item {
     font-size: 20px;
-    font-family: averia serif libre;
+    font-family: "averia serif libre";
     padding: 10px;
     float: left;
+    
   }
 
   .menu-item a {
-      color: brown;
-      opacity: 0.9;
+    color: brown;
+    opacity: 0.9;
+    transition: all .5s ease;      
+  }
+  .menu-item a:hover{
+    color: #fff;
   }
 
   .menulist li:last-child a {
-      color: #3a3333;
+    color: #3a3333;
   }
 
   /* content1 */
