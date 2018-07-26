@@ -87,7 +87,7 @@
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 385px;
     padding-top: 30px;
 }
 
