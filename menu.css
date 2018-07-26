@@ -46,7 +46,7 @@
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 40px 20px;
   position: relative;
   user-select: none;
 }
@@ -54,10 +54,10 @@
 .header .menu-icon .navicon {
   background: #333;
   display: block;
-  height: 2px;
+  height: 10px;
   position: relative;
   transition: background .2s ease-out;
-  width: 18px;
+  width: 50px;
 }
 
 .header .menu-icon .navicon:before,
@@ -72,11 +72,11 @@
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 20px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -22px;
 
 }
 
