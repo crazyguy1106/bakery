@@ -99,7 +99,7 @@ a img {
 .p1 {
   font-size: 15px;
   font-style: normal;
-  font-family: georgia;
+  font-family: "averia serif libre";
   text-align: justify;
   color: #706b67;
   padding-left: 20px;
@@ -109,7 +109,7 @@ a img {
 .call {
   font-size: 15px;
   font-style: normal;
-  font-family: georgia;
+  font-family: "averia serif libre";
   color: #706b67;
   padding-left: 20px;
   padding-top: 20px;
@@ -177,7 +177,7 @@ a img {
 .para2 {
   font-size: 15px;
   font-style: normal;
-  font-family: georgia;
+  font-family: "averia serif libre";
   color: #afa7a2;
   text-align: left;
   text-align: justify;
@@ -190,7 +190,7 @@ a img {
 .para3 {
   font-size: 18px;
   font-style: normal;
-  font-family: georgia;
+  font-family: "averia serif libre";
   color: #afa7a2;
   text-align: center;
   padding-left: 20px;
@@ -302,7 +302,7 @@ a img {
     padding: 15px 25px;
     border-radius: 8px;
     font-size: 20px;
-    font-family: georgia;
+    font-family: "averia serif libre";
     border: solid 1px #bf4d4e;
     transition: all .5s ease;
     cursor: pointer;
@@ -429,7 +429,8 @@ a img {
   .menu-item a {
     color: brown;
     opacity: 0.9;
-    transition: all .5s ease;      
+    transition: all .5s ease;
+    font-family: "averia serif libre";
   }
   .menu-item a:hover{
     color: #fff;
